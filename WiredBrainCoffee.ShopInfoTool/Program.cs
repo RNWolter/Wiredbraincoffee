@@ -1,4 +1,5 @@
 ﻿using System;
+using WiredBrainCoffee.DataAccess;
 
 namespace WiredBrainCoffee.ShopInfoTool
 {
@@ -6,17 +7,17 @@ namespace WiredBrainCoffee.ShopInfoTool
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wired Brain Coffee Shop Info Tool");
+            Console.WriteLine("Wired Brain Coffee - Shop Info Tool!");
 
-            Console.WriteLine("Write 'help' to list available coffee shop commands and commandos too, " +
-                    "write 'quit' to get out of the application");
+            Console.WriteLine("Write 'help' to list available coffee shop commands, " +
+              "write 'quit' to exit application");
 
             var coffeeShopDataProvider = new CoffeeShopDataProvider();
-            Console.WriteLine("So this is a holding place for something else");
+
             while (true)
             {
                 var line = Console.ReadLine();
-                Console.WriteLine("So this is a holding place");
+
                 if (string.Equals("quit", line, StringComparison.OrdinalIgnoreCase))
                 {
                     break;
