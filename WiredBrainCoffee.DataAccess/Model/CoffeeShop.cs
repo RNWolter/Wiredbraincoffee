@@ -8,5 +8,6 @@ namespace WiredBrainCoffee.DataAccess.Model
 
         public string locaion { get; set; }
         public int BeansInStockInKg { get; set; }
+        public int PaperCupsInStock { get; set; }
     }
 }
